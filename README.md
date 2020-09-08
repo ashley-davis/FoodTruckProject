@@ -2,6 +2,8 @@ FoodTruckProject is my week two assignement in Skill Distillery coding bootcamp.
 
 This project is a program that collects and compiles information from the user about up to 5 food trucks. 
 
+[Screen-Shot-2020-09-08-at-07-08-50.png](https://postimg.cc/nMJ9nn0L)
+
 The program assigns an ID number which increments up by one for every selection.
 
 
