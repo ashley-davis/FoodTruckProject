@@ -1,7 +1,11 @@
 package com.skilldistillery.foodtruckproject;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
+//Week Two Project: A program that prompts the user to input up to 5 food trucks. Program issues an ID number
+//for each truck, and provides an average, and the highest rated truck when prompted by the user. 
 
 public class MainClass {
 
@@ -12,9 +16,10 @@ public class MainClass {
 		int rating, count = 0;
 		char choice;
 
-		System.out.println("Welcome to Food Truck App! The best way to rate local food trucks." );
+		
+		System.out.println("Welcome to Food Truck App! Week Two Project by Ashley Davis.");
 		System.out.println();
-		System.out.println("Let's get started.\nEnter up to five food trucks. Type QUIT to end. ");
+		System.out.println("Let's get started.\nYou can enter up to five food trucks. Type QUIT to end. ");
 		do { // loop
 			scanner = new Scanner(System.in); // initialize the scanner
 			System.out.println("Food truck # " + String.valueOf(count + 1) + ": ");
@@ -22,7 +27,7 @@ public class MainClass {
 			name = scanner.nextLine(); // set the "name" value to the text typed by the user
 			if (name.toUpperCase().equals("QUIT"))
 				break; // if the user types "quit" then stop the input (break the loop)
-			System.out.print("Nice. What type of food is that? ");
+			System.out.println("Nice. What type of food is that? ");
 			foodType = scanner.nextLine(); // set the "food type" value to the text typed by the user
 			System.out.print("Mmm, sounds good. How would you rank " + name + " on a scale of 1 - 10? ");
 			rating = scanner.nextInt(); // set the "rating" value to the text typed by the user
@@ -69,12 +74,13 @@ public class MainClass {
 				System.out.println("Your highest rated truck is " + foodTrucks.get(rank).toString());
 				break;
 			case '4': // if the choice value equals '4' (the user type 4)
-				System.out.println("All done! Thanks for using Food Truck App. Enjoy your meal. ");
+				System.out.println("All done! Thanks for using Food Truck App :-) ");
 				break;
 			default: // if the choice value is not in the set {1, 2, 3, 4}
 				System.out.println("That's not a valid choice. Enter a number between 1 and 4:");
 				break;
 			}
+			scanner.close();
 		} while (choice != '4'); // loop until the user type '4'
 
 	}
