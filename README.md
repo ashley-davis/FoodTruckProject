@@ -24,6 +24,7 @@ The user is asked to name the type of food, and a numeric rating.
 
 The user has the option of seeing a list of the trucks they entered, seeing an average rating, and seeing the highest rated truck.
 
+[Screen-Shot-2020-09-08-at-07-13-15.png](https://postimg.cc/6Tyg5N3D)
 
 **Built With** 
 Eclipse IDE
@@ -32,6 +33,10 @@ Eclipse IDE
 Ashley Davis
 
 **Acknowledgements**
-Thank God StackOverflow and Youtube don't charge by the minute.
+StackOverflow
+Youtube
+Crunchify.com and many other Java development blogs
 
-Special thanks to Denise, Rob Roselius, Darin Thompson, Anthony King, my brother Gabriel Davis, and Classmates of SD 27 Cohort
+**Special Thanks** 
+SD instructors Denise, Rob Roselius, Darin Thompson, Anthony King, Jeremy. 
+A debt of gratitude to my brother Gabriel Davis, my dogs Cowboy and Garbanzo, and Classmates of SD 27 Cohort.
