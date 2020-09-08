@@ -1,8 +1,6 @@
 package com.skilldistillery.foodtruckproject;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Scanner;
 //Week Two Project: A program that prompts the user to input up to 5 food trucks. Program issues an ID number
 //for each truck, and provides an average, and the highest rated truck when prompted by the user. 
@@ -42,17 +40,16 @@ public class MainClass {
 			System.out.println("3. See the highest-rated food truck.");
 			System.out.println("4. Quit the program.");
 			System.out.print("Choice: ");
-			choice = scanner.nextLine().charAt(0); // set the "choice" value to the 1st character of the text typed by
-													// the user
+			choice = scanner.nextLine().charAt(0); // set the "choice" to number typed by the user
 			switch (choice) {
-			case '1': // if the choice value equals '1' (the user type 1)
+			case '1': // if the choice value equals '1' 
 				System.out.println("Here's a list of food trucks you entered: ");
 				for (int i = 0; i < foodTrucks.size(); i++) { // loop
 					System.out.println(foodTrucks.get(i).toString()); // display all the existing food trucks one by one
 				}
 				;
 				break;
-			case '2': // if the choice value equals '2' (the user type 2)
+			case '2': // if the choice value equals '2' 
 				int sumRating = 0; // sum of all ratings
 				double avgRating; // average of ratings
 				for (int i = 0; i < foodTrucks.size(); i++) // loop
@@ -61,7 +58,7 @@ public class MainClass {
 																				// number
 				System.out.println("The average rating is : " + avgRating); // print the result to the screen
 				break;
-			case '3': // if the choice value equals '3' (the user type 3)
+			case '3': // if the choice value equals '3' 
 				int rank = 0; // initialize the rank of the highest rating to 0
 				int highestRating = foodTrucks.get(rank).getRating(); // initialize the highest rating value to the
 																		// first rating value
@@ -73,8 +70,8 @@ public class MainClass {
 					}
 				System.out.println("Your highest rated truck is " + foodTrucks.get(rank).toString());
 				break;
-			case '4': // if the choice value equals '4' (the user type 4)
-				System.out.println("All done! Thanks for using Food Truck App :-) ");
+			case '4': // if the choice value equals '4' 
+				System.out.println("All done! Thanks for using Food Truck App. ");
 				break;
 			default: // if the choice value is not in the set {1, 2, 3, 4}
 				System.out.println("That's not a valid choice. Enter a number between 1 and 4:");
